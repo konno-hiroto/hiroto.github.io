@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!--
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='Konno Hiroto ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='Hanako Yamadaのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Hanako Yamadaのポートフォリオサイトです" />
+-->
+  <title>Konno Hiroto ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+Garamond&family=Dancing+Script&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+</head>
+
+<body>
+ <div class="container-calendar">
+          <h4 id="monthAndYear"></h4>
+          <div class="button-container-calendar">
+              <button id="previous" onclick="previous()">‹</button>
+              <button id="next" onclick="next()">›</button>
+          </div>
+          <table class="table-calendar" id="calendar" data-lang="ja">
+              <thead id="thead-month"></thead>
+              <tbody id="calendar-body"></tbody>
+          </table>
+          <div class="footer-container-calendar">
+              <label for="month">日付指定：</label>
+              <select id="month" onchange="jump()">
+                  <option value=0>1月</option>
+                  <option value=1>2月</option>
+                  <option value=2>3月</option>
+                  <option value=3>4月</option>
+                  <option value=4>5月</option>
+                  <option value=5>6月</option>
+                  <option value=6>7月</option>
+                  <option value=7>8月</option>
+                  <option value=8>9月</option>
+                  <option value=9>10月</option>
+                  <option value=10>11月</option>
+                  <option value=11>12月</option>
+              </select>
+              <select id="year" onchange="jump()"></select>
+          </div>
+    </div>
+        <script src="calendar1.js" type="text/javascript"></script>
+        
+  <div class="wrapper">
+
+
+
+    <main class="content">
+
+      <!-- header -->
+      <header class="header">
+        <div class="header-inner">
+          <p class="header-title">Konno Hiroto</p>
+          <p class="header-subtitle">Portfolio</p>
+        </div>
+
+      </header>
+      <!-- /header -->
+
+      <!-- gnav -->
+      <nav class="gnav">
+        <div class="gnav-inner">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="#profile">profile</a></li>
+            <li class="gnav-item"><a href="#works">works</a></li>
+            <li class="gnav-item"><a href="#skill">skill</a></li>
+            <li class="gnav-item"><a href="#about">about</a></li>
+            <li class="gnav-item"><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /gnav -->
+
+     <!-- profile -->
+      <section class="profile section" id="profile">
+        <div class="inner">
+          <h2 class="title">profile</h2>
+          <div class="profile-list">
+             <p class="lead">
+                初めまして。
+          </p>
+          </div>
+        </div>
+      </section>
+      <!-- /profile -->
+     
+      <!-- works -->
+      <section class="works section" id="works">
+        <div class="inner">
+          <h2 class="title">works</h2>
+          <div class="works-list">
+            <a class="works-item" href="works-template.html">
+              <p class="works-img"><img src="img/works-sample-thumb.jpg" alt="" /></p>
+              <p class="works-name">システム開発演習（学校行事）</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+              </a>
+          </div>
+        </div>
+      </section>
+      <!-- /works -->
+
+      <!-- skill -->
+      <section class="skill section" id="skill">
+        <div class="inner">
+          <h2 class="title">skill</h2>
+          <div class="skill-list">
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">HTML/CSS</h3>
+                <p class="skill-text">
+                使用経験あり。
+                実際に学校での授業で学び、システム開発のある授業でもhtml,cssを使い、レイアウトを作成して行きました。
+                授業以外でもwordpressでwebを作成した際にhtml,cssを使って作成した経験があります。
+                </p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">WordPress</h3>
+                <p class="skill-text">
+                  使用経験あり。
+                  実際にドメインとサーバーを使いwebを作成しました。現在はドメインを失効してしまい閲覧することができませんがPHPはいじっていませんが、html,cssを使い、webのレイアウトを考え作成しました。
+                  </p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">JavaScript</h3>
+                <p class="skill-text">
+                  使用経験あり。
+                  実際に学校での授業で基礎的なことを学びました、ですがレベル的にはまだまだです。
+                  </p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">Java</h3>
+                <p class="skill-text">
+                使用経験あり。
+                授業の中で時間をかけて学びました、ですがまだまだ勉強不足で苦手なプログラミング言語です。
+                </p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">PHP</h3>
+                <p class="skill-text">
+                 使用経験あり。
+                 授業で学び、授業の一環であるシステム開発演習でもPHPを使いシステムを作成しました。
+                 JAVAよりかは得意
+                  </p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">フレームワーク</h3>
+                <p class="skill-text">
+                  ほぼ使用経験なし。
+                  学校での授業でも使用してことがなく、分かりませんが今一番興味がある</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /skill -->
+
+      <!-- 
+      <section class="about section" id="about">
+        <div class="inner">
+          <h2 class="title">about</h2>
+          <div class="profile">
+            <p class="profile-img">
+              <img src="img/profile.jpg" alt="">
+            </p>
+            <div class="profile-body">
+              <p>
+                初めまして、この度は私、今野　博斗のポートフォリオをご覧いただきありがとうございます。
+                SKILLの
+              </p>
+              <p>
+                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      -->
+
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <div class="inner">
+          <h2 class="title">contact</h2>
+          <p class="lead">
+            お問い合わせは、<br class="sp-only">201145@yoshida-g-ac.jpによろしくお願いいたします。
+          </p>
+        <!--
+          <div class="contact-list">
+            <a class="contact-item" href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+            <a class="contact-item" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <span class="contact-item">xxxxxx@gmail.com</span>
+          </div>
+        -->
+        </div>
+      </section>
+      <!-- /contact -->
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;Hanako Yamada</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>

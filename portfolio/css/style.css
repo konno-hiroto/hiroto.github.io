@@ -125,14 +125,23 @@ li {
 グローバルナビ
 ---------------------------------*/
 .gnav {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #fff;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
 }
 
 .gnav-inner {
+    color: #6cb4e4;
+    text-align: center;
+    padding: 0.25em;
+    border-top: solid 2px #6cb4e4;
+    border-bottom: solid 2px #6cb4e4;
+    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/              
   padding: 15px 40px;
   width: 50%: 
 }
@@ -330,7 +339,68 @@ li {
   padding: 0 20px;
 }
 
+
+
+h2 {
+ position: relative;
+  margin: 30px;
+  text-align: center;
+}
+
+h2:before,
+h2:after {
+  position: absolute;
+  z-index: 0;
+  bottom: -10px;
+  display: block;
+  content: '';
+  border: 1em solid #d90606;
+}
+
+h2:before {
+  left: -30px;
+  border-left-width: 15px;
+  border-left-color: transparent;
+}
+
+h2:after {
+  right: -30px;
+  border-right-width: 15px;
+  border-right-color: transparent;
+}
+
+h2 span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #fa4141;
+}
+
+h2 span:before,
+h2 span:after {
+  position: absolute;
+  bottom: -10px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-style: solid;
+  border-color: #b70505 transparent transparent transparent;
+}
+
+h2 span:before {
+  left: 0;
+  border-width: 10px 0 0 10px;
+}
+
+h2 span:after {
+  right: 0;
+  border-width: 10px 10px 0 0;
+}
 .article-title {
+　
   margin-bottom: 30px;
   text-align: center;
 }
@@ -346,7 +416,15 @@ li {
 }
 
 .article-info-title {
-  font-size: 15px;
+  text-align: center;
+  font-size: 20px; 
+  padding: 1rem 3rem;
+  color: #fff;
+  border-radius: 100vh;
+  background-image: -webkit-gradient(linear, right top, left top, from(#9be15d), to(#00e3ae));
+  background-image: -webkit-linear-gradient(right, #9be15d 0%, #00e3ae 100%);
+  background-image: linear-gradient(to left, #9be15d 0%, #00e3ae 100%);
+
 }
 
 .article-body img {
@@ -504,5 +582,5 @@ li {
     position:absolute; top:0%; left:70%; 
 }
 .jpg{
-    position:absolute; top:20%; left:60px;
+    position:absolute; top:10%; left:60px;
 }

@@ -82,7 +82,6 @@ li {
   font-size: 72px;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: #f5b5d5;
 }
 .header-subtitle {
   font-family: "Amatic SC", cursive;
@@ -111,7 +110,7 @@ li {
   font-size: 40px;
   line-height: 1.2;
   margin-bottom: 5px;
-  color: #f5b5d5;
+  color: #000000;
 }
 .sub-header-subtitle {
   font-family: "Amatic SC", cursive;
@@ -343,8 +342,9 @@ li {
 
 h2 {
  position: relative;
-  margin: 30px;
-  text-align: center;
+ margin: 30px;
+ text-align: center;
+ font-family: cursive;
 }
 
 h2:before,
@@ -567,7 +567,7 @@ h2 span:after {
 */
   /* フッター */
   .footer {
-    padding: 20px;
+    padding: 200px;
   }
 
   /* 下層ページ */

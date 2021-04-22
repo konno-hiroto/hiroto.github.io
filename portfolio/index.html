@@ -1,219 +1,225 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Konno Hiroto</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+Garamond&family=Dancing+Script&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
-  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" /> 
-  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-  <link rel="shortcut icon" href="img/favicon.ico" />
-  <link rel="stylesheet" href="css/calendar.css">
-</head>
+  <head>
+    <title>Konno Hiroto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+Garamond&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/calendar.css" />
+  </head>
 
-<body>  
-  <div class="wrapper">
-
-
-
-    <main class="content">
-
-      <!-- header -->
-      <header class="header" id="top">
-        <div class="header-inner">
-          <p class="header-title">Konno Hiroto</p>
-          <p class="header-subtitle">Portfolio</p>
-        </div>
-
-      </header>
-      <!-- /header -->
-    <div class="container-calendar">
+  <body>
+    <div class="wrapper">
+      <main class="content">
+        <!-- header -->
+        <header class="header" id="top">
+          <div class="header-inner">
+            <p class="header-title">Konno Hiroto</p>
+            <p class="header-subtitle">Portfolio</p>
+          </div>
+        </header>
+        <!-- /header -->
+        <div class="container-calendar">
           <h4 id="monthAndYear"></h4>
           <div class="button-container-calendar">
-              <button id="previous" onclick="previous()">‹</button>
-              <button id="next" onclick="next()">›</button>
+            <button id="previous" onclick="previous()">‹</button>
+            <button id="next" onclick="next()">›</button>
           </div>
-          
+
           <table class="table-calendar" id="calendar" data-lang="ja">
-              <thead id="thead-month"></thead>
-              <tbody id="calendar-body"></tbody>
+            <thead id="thead-month"></thead>
+            <tbody id="calendar-body"></tbody>
           </table>
-          
+
           <div class="footer-container-calendar">
-              <label for="month">日付指定：</label>
-              <select id="month" onchange="jump()">
-                  <option value=0>1月</option>
-                  <option value=1>2月</option>
-                  <option value=2>3月</option>
-                  <option value=3>4月</option>
-                  <option value=4>5月</option>
-                  <option value=5>6月</option>
-                  <option value=6>7月</option>
-                  <option value=7>8月</option>
-                  <option value=8>9月</option>
-                  <option value=9>10月</option>
-                  <option value=10>11月</option>
-                  <option value=11>12月</option>
-              </select>
-              <select id="year" onchange="jump()"></select>
+            <label for="month">日付指定：</label>
+            <select id="month" onchange="jump()">
+              <option value="0">1月</option>
+              <option value="1">2月</option>
+              <option value="2">3月</option>
+              <option value="3">4月</option>
+              <option value="4">5月</option>
+              <option value="5">6月</option>
+              <option value="6">7月</option>
+              <option value="7">8月</option>
+              <option value="8">9月</option>
+              <option value="9">10月</option>
+              <option value="10">11月</option>
+              <option value="11">12月</option>
+            </select>
+            <select id="year" onchange="jump()"></select>
           </div>
-    </div>
-
-    <script src="js/calendar.js" type="text/javascript"></script>
-    
-    <div class="jpg">
-    <a href="#profile">
-    <img src="img/hiroto.jpg" alt="prohile" width="20%">
-    </a>
-    </div>
-
-      <!-- gnav -->
-      <nav class="gnav">
-        <div class="gnav-inner">
-          <ul class="gnav-list">
-            <li class="gnav-item" id="profile"><a href="#profile">profile</a></li>
-            <li class="gnav-item" id="works"><a href="#workss">works</a></li>
-            <li class="gnav-item" id="skill"><a href="#skilll">skill</a></li>
-            <li class="gnav-item" id="contact"><a href="#contactt">contact</a></li>
-          </ul>
         </div>
-      </nav>
-      <!-- /gnav -->
 
-     <!-- profile -->
-      <section class="profile section" id="profile">
-        <div class="inner">
+        <script src="js/calendar.js" type="text/javascript"></script>
+
+        <div class="jpg">
+          <a href="#profile">
+            <img src="img/hiroto.jpg" alt="prohile" width="20%" />
+          </a>
+        </div>
+
+        <!-- gnav -->
+        <nav class="gnav">
+          <div class="gnav-inner">
+            <ul class="gnav-list">
+              <li class="gnav-item" id="profile">
+                <a href="#profile">Profile</a>
+              </li>
+              <li class="gnav-item" id="works"><a href="#workss">Works</a></li>
+              <li class="gnav-item" id="skill"><a href="#skilll">Skill</a></li>
+              <li class="gnav-item" id="contact">
+                <a href="#contactt">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- /gnav -->
+
+        <!-- profile -->
+        <section class="profile section" id="profile">
+          <div class="inner">
             <h2 class="title"><span>profile</span></h2>
-          <div class="profile-img">
-              <img src="img/hiroto1.jpg" alt="">
-          </div>
-          <div class="profile-list">
-             <p class="lead">
-                初めまして、吉田学園情報ビジネス専門学校　情報システム学科2年の今野　博斗です。<br>
-                この度はポートフォリオをご覧いただきありがとうございます。<br>
-                Worksには授業の一環として行われたグループ開発演習で作成したレジシステムを載せています。<br>
-                私自身、WordPressでサイトを構築した経験がありますがそちらのサイトは諸事情により載せておりません、そして今回初めて、ポートフォリオを作成しまだまだ技術、知識ともに足りなくところどころエラーになる箇所があるかと思いますがご了承ください。<br>
+            <div class="profile-img">
+              <img src="img/hiroto1.jpg" alt="" />
+            </div>
+            <div class="profile-name">
+              Konno Hiroto
+            </div>
+            <div class="profile-list">
+              <p class="lead">
+                初めまして、吉田学園情報ビジネス専門学校　情報システム学科2年の今野　博斗です。<br />
+                この度はポートフォリオをご覧いただきありがとうございます。<br />
+                Worksには授業の一環として行われたグループ開発演習で作成したレジシステムを載せています。<br />
+                私自身、WordPressでサイトを構築した経験がありますがそちらのサイトは諸事情により載せておりません、そして今回初めて、ポートフォリオを作成しまだまだ技術、知識ともに足りなくところどころエラーになる箇所があるかと思いますがご了承ください。<br />
                 このポートフォリオを土台とし今後より良いものを作っていきたいと思っておりますのでぜひよろしくお願いいたします。
-          　　</p>
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-      <!-- /profile -->
-     
-      <!-- works -->
-      <section class="works section" id="workss">
-        <div class="inner">
+        </section>
+        <!-- /profile -->
+
+        <!-- works -->
+        <section class="works section" id="workss">
+          <div class="inner">
             <h2 class="title"><span>works</span></h2>
-          <div class="works-list">
-            <a class="works-item" href="works.html">
-              <p class="works-img"><img src="img/home.png" alt="" /></p>
-              <p class="works-name">システム開発演習（学校行事）</p>
+            <div class="works-list">
+              <a class="works-item" href="works.html">
+                <p class="works-img"><img src="img/home.png" alt="" /></p>
+                <p class="works-name">システム開発演習（学校行事）</p>
               </a>
+            </div>
           </div>
-        </div>
-      </section>
-      <!-- /works -->
+        </section>
+        <!-- /works -->
 
-      <!-- skill -->
-      <section class="skill section" id="skilll">
-        <div class="inner">
+        <!-- skill -->
+        <section class="skill section" id="skilll">
+          <div class="inner">
             <h2 class="title"><span>skill</span></h2>
-          <div class="skill-list">
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/pen.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">HTML/CSS</h3>
-                <p class="skill-text">
-                使用経験あり。<br>
-                学校の授業で学び、その後授業の一環であるシステム開発演習にて使用して経験や授業以外でもwordpressでwebを作成した際にcssを使って作成した経験があります。
-                </p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/book1.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">WordPress</h3>
-                <p class="skill-text">
-                  使用経験あり。<br>
-                  実際にドメインとサーバーを使いwebを作成しました。現在は閲覧することができませんがphpはいじらずcssを使いレイアウトを見やすく、使いやすく作成しました。
+            <div class="skill-list">
+              <div class="skill-item">
+                <p class="skill-img"><img src="img/pen.png" alt="" /></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">HTML/CSS</h3>
+                  <p class="skill-text">
+                    使用経験あり。<br />
+                    学校の授業で学び、その後授業の一環であるシステム開発演習にて使用して経験や授業以外でもwordpressでwebを作成した際にcssを使って作成した経験があります。
                   </p>
+                </div>
               </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/drawing.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">JavaScript</h3>
-                <p class="skill-text">
-                  使用経験あり。<br>
-                　学校の授業で学び、授業の一環であるシステム開発演習で使用した程度です。
+              <div class="skill-item">
+                <p class="skill-img"><img src="img/book1.png" alt="" /></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">WordPress</h3>
+                  <p class="skill-text">
+                    使用経験あり。<br />
+                    実際にドメインとサーバーを使いwebを作成しました。現在は閲覧することができませんがphpはいじらずcssを使いレイアウトを見やすく、使いやすく作成しました。
                   </p>
+                </div>
               </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/tap.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">Java</h3>
-                <p class="skill-text">
-                使用経験あり。<br>
-                学校の授業で学びました、時間をかけて学んだプログラム言語の一つです
-                システムなどの開発はしていなくレベルはまだまだの段階です。
-                </p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/setting1.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">PHP</h3>
-                <p class="skill-text">
-                 使用経験あり。<br>
-                 学校の授業で学びました、時間をかけて学んだプログラム言語の一つです。<br>
-                 実際にシステム開発演習で使用しレジシステムを開発しました。<br>
-                 今後ともに知識、技術ともに向上させたい言語です。
+              <div class="skill-item">
+                <p class="skill-img"><img src="img/drawing.png" alt="" /></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">JavaScript</h3>
+                  <p class="skill-text">
+                    使用経験あり。<br />
+                    学校の授業で学び、授業の一環であるシステム開発演習で使用した程度です。
                   </p>
+                </div>
               </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/pc.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">フレームワーク</h3>
-                <p class="skill-text">
-                  使用経験があり。<br>
-                  授業でSpringBootを使用しプログラミングをしましたが開発は行ったことがありません。<br>
-                  その他にもBootStrapやLaravelの名前を聞いたことがある程度で使用方法は分かりませんが
-                  、後に習得したいと思っております。
+              <div class="skill-item">
+                <p class="skill-img"><img src="img/tap.png" alt="" /></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">Java</h3>
+                  <p class="skill-text">
+                    使用経験あり。<br />
+                    学校の授業で学びました、時間をかけて学んだプログラム言語の一つです
+                    システムなどの開発はしていなくレベルはまだまだの段階です。
                   </p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p class="skill-img"><img src="img/setting1.png" alt="" /></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">PHP</h3>
+                  <p class="skill-text">
+                    使用経験あり。<br />
+                    学校の授業で学びました、時間をかけて学んだプログラム言語の一つです。<br />
+                    実際にシステム開発演習で使用しレジシステムを開発しました。<br />
+                    今後ともに知識、技術ともに向上させたい言語です。
+                  </p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <p class="skill-img"><img src="img/pc.png" alt="" /></p>
+                <div class="skill-body">
+                  <h3 class="skill-name">フレームワーク</h3>
+                  <p class="skill-text">
+                    使用経験があり。<br />
+                    授業でSpringBootを使用しプログラミングをしましたが開発は行ったことがありません。<br />
+                    その他にもBootStrapやLaravelの名前を聞いたことがある程度で使用方法は分かりませんが
+                    、後に習得したいと思っております。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- /skill -->
+        </section>
+        <!-- /skill -->
 
-      <section class="contact section" id="contactt">
-        <div class="inner">
+        <section class="contact section" id="contactt">
+          <div class="inner">
             <h2 class="title"><span>contact</span></h2>
-          <p class="lead">
-            お問い合わせは、<br class="sp-only">201145@yoshida-g-ac.jpによろしくお願いいたします。
-          </p>
-        
+            <p class="lead">
+              お問い合わせは、<br
+                class="sp-only"
+              />201145@yoshida-g-ac.jpによろしくお願いいたします。
+            </p>
+          </div>
+        </section>
+        <!-- /contact -->
+        <div class="page-top" id="js-page-top">
+          <span class="material-icons-outlined">expand_less</span>
         </div>
-      </section>
-      <!-- /contact -->
-      <div class="page-top" id="js-page-top">
-        <span class="material-icons-outlined">expand_less</span>
-      </div>
-    </main>
+      </main>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="copyright">&copy;Konno Hiroto</div>
-    </footer>
-    <!-- /footer -->
-
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type='text/javascript' src="js/script.js"></script>
-</body>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="copyright">&copy;Konno Hiroto</div>
+      </footer>
+      <!-- /footer -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>

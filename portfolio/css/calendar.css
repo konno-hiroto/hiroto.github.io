@@ -1,9 +1,11 @@
-.wrapper {
+/*.wrapper {
   margin: 15px auto;
   max-width: 700px;
 }
+*/
 .container-calendar {
-    position: absolute;
+    left: auto;
+    top: 20%;
 }
 .button-container-calendar button {
   cursor: pointer;

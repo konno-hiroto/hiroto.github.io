@@ -69,8 +69,9 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 65vh;
+  height: 80vh;
   text-align: center;
+  background: url(../img/1.jpg) center / cover;
 }
 
 .header-inner {
@@ -500,7 +501,7 @@ h2 span:after {
     font-size: 14px;
   }
 
-  /* グローバルナビ */
+  /* グローバルナビ 
   .gnav .inner {
     padding: 15px;
   }
@@ -520,6 +521,8 @@ h2 span:after {
   .gnav-item a:after {
     display: none;
   }
+    
+    */
 
   /* Works */
   .works-name {
@@ -551,20 +554,6 @@ h2 span:after {
     margin-bottom: 0;
   }
 
-  /* About 
-  .profile {
-    display: block;
-  }
-  .profile-img {
-    width: 150px;
-    margin: 0 auto;
-    margin-bottom: 25px;
-  }
-
-  .profile-body p:not(:last-child) {
-    margin-bottom: 20px;
-  }
-*/
   /* フッター */
   .footer {
     padding: 200px;
@@ -582,5 +571,5 @@ h2 span:after {
     position:absolute; top:0%; left:70%; 
 }
 .jpg{
-    position:absolute; top:10%; left:60px;
+    position:absolute; top:20%; left:60px;
 }
